@@ -1,0 +1,31 @@
+# Environment & Sensitive Credentials
+credentials.txt
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+package-lock.json.bak
+
+# Large raw dataset files (>30MB - already indexed in Qdrant Vector Cloud)
+data/*.jsonl
+
+# Binaries & Tooling
+cloudflared
+public-tunnel-info.txt
+
+# Screenshots & Local Test Artifacts
+*.png
+.playwright-mcp/
+
+# System & Editor
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vercel Deployment Artifacts
+.vercel
